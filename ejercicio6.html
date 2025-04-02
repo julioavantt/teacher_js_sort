@@ -1,0 +1,19 @@
+<script>
+ const muebles = [
+  { tipo: "silla", nombre: "Silla de madera", precio: 50 },
+  { tipo: "silla", nombre: "Silla ergonómica", precio: 120 },
+  { tipo: "silla", nombre: "Silla plegable", precio: 30 },
+  { tipo: "mesa", nombre: "Mesa de comedor", precio: 200 },
+  { tipo: "mesa", nombre: "Mesa de oficina", precio: 150 },
+  { tipo: "mesa", nombre: "Mesa auxiliar", precio: 80 },
+ ];
+
+ muebles.sort((a, b) => {
+  if (a.tipo !== b.tipo) {
+   return a.tipo.localeCompare(b.tipo);
+  }
+  return b.precio - a.precio;
+ });
+
+ console.table(muebles);
+</script>

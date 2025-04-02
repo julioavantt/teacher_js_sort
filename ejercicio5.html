@@ -1,0 +1,11 @@
+<script>
+ const paises = [
+  { nombre: "Burundi", reservas: 88_357_000 },
+  { nombre: "Sudán del Sur", reservas: 200_000_000 },
+  { nombre: "Malawi", reservas: 595_200_000 },
+ ];
+
+ paises.sort((a, b) => a.nombre.localeCompare(b.nombre));
+
+ console.table(paises);
+</script>
